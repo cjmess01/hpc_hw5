@@ -1,0 +1,91 @@
+setting asax scratch directory
+ 
+============================================================
+=====         Summary of your GPU job                  =====
+============================================================
+  The script file is: job.sh
+  The time limit is 01:00:00 HH:MM:SS.
+  The target directory is: /home/ualclsd0178/hw5/hpc_hw5
+  The working directory is:  /scratch-local/ualclsd0178.final_test_hw5.217207.asax-pbs1
+  The memory limit is: 1gb
+  The job will start running after: 202412011914.45
+  Job Name: final_test_hw5
+  Queue: -q classgpu
+  Constraints: 
+  Using  1  cores on master node  asaxg002.asc.edu
+  Node list:  asaxg002.asc.edu
+  Cores:  1
+  Command typed:
+/scripts/run_gpu job.sh     
+  Queue submit command:
+qsub -q classgpu -j oe -N final_test_hw5 -a 202412011914.45 -r n -M cjmesserly@crimson.ua.edu -l walltime=01:00:00 -l select=1:ngpus=1:ncpus=1:mpiprocs=1:mem=1000mb 
+ 
+Sun Dec  1 19:14:54 2024       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 560.28.03              Driver Version: 560.28.03      CUDA Version: 12.6     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-SXM4-40GB          On  |   00000000:81:00.0 Off |                    0 |
+| N/A   27C    P0             48W /  400W |       1MiB /  40960MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+Finished Conway
+Test details:
+ 5002 by 5002 board
+5000 generations
+Time taken = 11.956306 seconds
+Terminated at generation 5000
+Done
+Finished
+Finished Conway
+Test details:
+ 5002 by 5002 board
+5000 generations
+Time taken = 11.057111 seconds
+Terminated at generation 5000
+Done
+Finished
+Finished Conway
+Test details:
+ 5002 by 5002 board
+5000 generations
+Time taken = 11.057054 seconds
+Terminated at generation 5000
+Done
+Finished
+Finished Conway
+Test details:
+ 10002 by 10002 board
+5000 generations
+Time taken = 26.005129 seconds
+Terminated at generation 5000
+Done
+Finished
+Finished Conway
+Test details:
+ 10002 by 10002 board
+5000 generations
+Time taken = 26.003817 seconds
+Terminated at generation 5000
+Done
+Finished
+Finished Conway
+Test details:
+ 10002 by 10002 board
+5000 generations
+Time taken = 26.011461 seconds
+Terminated at generation 5000
+Done
+Finished
+Cgroup mem limit exceeded: 

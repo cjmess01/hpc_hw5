@@ -1,0 +1,18 @@
+ 
+============================================================
+=====     Queued job information at submit time        =====
+============================================================
+  The submitted file is: job.sh
+  The time limit is 01:00:00 HH:MM:SS.
+  The target directory is: /home/ualclsd0178/hw5/hpc_hw5
+  The memory limit is: 1gb
+  The job will start running after: 202412011914.45
+  Job Name: final_test_hw5
+  Queue: -q classgpu
+  Constraints: 
+  Command typed:
+/scripts/run_gpu job.sh     
+  Queue submit command:
+qsub -q classgpu -j oe -N final_test_hw5 -a 202412011914.45 -r n -M cjmesserly@crimson.ua.edu -l walltime=01:00:00 -l select=1:ngpus=1:ncpus=1:mpiprocs=1:mem=1000mb 
+  Job number: 217207
+ 
